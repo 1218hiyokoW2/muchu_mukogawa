@@ -156,7 +156,7 @@ function randomQ(qg) {
     ran = Math.floor(Math.random() * 3); // 0から6の整数を生成
   } else if (qg == 2) {
     /*ran = Math.floor(Math.random() * 3) + 3;*/
-    ran = 7;
+    ran = 4;
   } else {
     ran = Math.floor(Math.random() * 3) + 5; // 8から19の整数を生成
   }
@@ -211,4 +211,5 @@ function nextquestion(Q) {
 //   correctans = kiCorr[kQuizNum];
 //   console.log(kQuizNum);
 // }
+
 
