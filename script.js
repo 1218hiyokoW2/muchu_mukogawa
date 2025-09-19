@@ -120,7 +120,7 @@ function checkans() {
     // 正解時
     result.style.display = 'block';
 
-    resultimg.src = 'maruma-ku-illust3.png';
+    resultimg.src = 'maru.png';
     setTimeout(function () {
       result.style.display = 'none';
     }, 1000);
@@ -136,7 +136,7 @@ function checkans() {
   } else {
     // 不正解時
     result.style.display = 'block';
-    resultimg.src = 'batuma-ku-illust13.png';
+    resultimg.src = 'batu.png';
     setTimeout(function () {
       result.style.display = 'none';
     }, 1000);
@@ -210,6 +210,7 @@ function nextquestion(Q) {
 //   correctans = kiCorr[kQuizNum];
 //   console.log(kQuizNum);
 // }
+
 
 
 
