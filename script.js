@@ -68,49 +68,25 @@ const Qimg = [
   '初級1.png',
   '初級2.png',
   '初級3.png',
-  '初級4.png',
-  '初級5.png',
-  '初級6.png',
-  '初級7.png',
+ 
 
   '中級.png',
 
   '上級1.png',
   '上級2.png',
-  '上級3.png',
-  '上級4.png',
-  '上級5.png',
-  '上級6.png',
-  '上級7.png',
-  '上級8.png',
-  '上級9.png',
-  '上級10.png',
-  '上級11.png',
-  '上級12.png'
+  '上級3.png'
 ]; //問題画像
 const Corr = [
   '将棋',
   'かいすい',
   '心音',
-  'えべれすと',
-  'いみ',
-  '4',
-  '8',
 
   '東京',
 
   '芋',
   'ぱんだ',
   '青赤',
-  'しおひがり',
-  '茶色',
-  'ふぁみれす',
-  '糸',
-  'まうす',
-  'さいふ',
-  'しか',
-  'みーと',
-  '渋沢栄一'
+  'しおひがり'
 ]; //対応する正解
 const kiQimg = ['子供用謎解き1.png', '子供用謎解き2.png', '子供用謎解き3.png'];
 const kiCorr = ['1', 'うえ', 'きつねのこども']; //三問ずつ
@@ -177,12 +153,12 @@ function randomQ(qg) {
   //qgで一問目
   //最大値引く最小値＋最小値（フロア後）
   if (qg == 1) {
-    ran = Math.floor(Math.random() * 7); // 0から6の整数を生成
+    ran = Math.floor(Math.random() * 3); // 0から6の整数を生成
   } else if (qg == 2) {
     /*ran = Math.floor(Math.random() * 3) + 3;*/
     ran = 7;
   } else {
-    ran = Math.floor(Math.random() * 12) + 8; // 8から19の整数を生成
+    ran = Math.floor(Math.random() * 3) + 5; // 8から19の整数を生成
   }
   //ランダムにする
 
@@ -235,3 +211,4 @@ function nextquestion(Q) {
 //   correctans = kiCorr[kQuizNum];
 //   console.log(kQuizNum);
 // }
+
