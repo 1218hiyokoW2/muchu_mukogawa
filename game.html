@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=390, initial-scale=1.0" />
+    <title>MUCHU2025　榎並ゼミ</title>
+    <style>
+      * {
+        margin: 0;
+        width: 390px;
+        /* background-color: rgb(0, 0, 0); */
+        color: black;
+        text-align: center;
+      }
+      body {
+        height: 800px;
+        background-image: url(back.png);
+      }
+      hr {
+        margin-left: 0;
+        width: 100%;
+        background-color: #6bdaa3;
+        height: 8px;
+      }
+      #line {
+        /* text-align: left; */
+        margin-left: 20px;
+        margin-top: 25px;
+      }
+      #start img,
+      #kids img {
+        width: 250px;
+      }
+      #default {
+        /* color: black; */
+        padding-top: 15px;
+        width: 58px;
+        height: 36px;
+        background-image: url(tokei.png);
+        background-repeat: no-repeat;
+      }
+      .timer {
+        /* background: none; */
+        width: 300px;
+        display: flex;
+        margin: auto;
+        padding-top: 10%;
+
+        margin-bottom: 20px;
+      }
+      #backimg {
+        margin: auto;
+        background-color: white;
+        text-align: center;
+        height: 300px;
+        width: 360px;
+        /* 今だけ文字色黒 */
+        color: black;
+      }
+      #backimg img {
+        width: 360px;
+      }
+      #kaitou {
+        color: rgb(43, 43, 43);
+        margin-top: 15px;
+        height: 30px;
+        width: 270px;
+        background-color: rgb(255, 255, 255);
+      }
+      #kaitoubtn {
+        display: none;
+        /* background-color: plum; */
+        /* height: 60px;
+        width: 250px; */
+        /* border-radius: 10px; */
+      }
+      #quiz {
+        background-color: white;
+        /* color: black; */
+        width: 360px;
+      }
+      #result {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-06RRD8B20F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-06RRD8B20F');
+    </script>
+  </head>
+  <body>
+    <!-- 遊び方を問題の部分に表示させてはじまり、スタートボタンとともに問題1がスタートする -->
+
+    <div class="timer">
+      <img src="tokei.png" alt="tokei" />
+      <span id="default">time</span>
+      <hr id="line" />
+    </div>
+    <!-- ↑タイマー -->
+    <div id="backimg">
+      <span id="quiz"> </span>
+      <img id="quizsrc" src="howto.png" alt="問題" />
+    </div>
+
+    <input id="kaitou" type="text" name="ans" placeholder="入力" />
+    <p>注意：漢字/ひらがな/半角数字です</p>
+    <!-- <br /> -->
+    <div id="STARTGR">
+      <div id="start">
+        <img src="hard.png" alt="hard" />
+      </div>
+      <p>小学生以下のみご利用できます↓</p>
+      <div id="kids">
+        <img src="easy.png" alt="easy" />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="kaitoubtn">
+      <img src="回答.png" alt="回答" />
+    </div>
+    <p id="result"><img src="maruma-ku-illust3.png" id="resultimg" /></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
