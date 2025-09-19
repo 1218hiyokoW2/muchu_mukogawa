@@ -85,8 +85,7 @@ const Corr = [
 
   '芋',
   'ぱんだ',
-  '青赤',
-  'しおひがり'
+  '青赤'
 ]; //対応する正解
 const kiQimg = ['子供用謎解き1.png', '子供用謎解き2.png', '子供用謎解き3.png'];
 const kiCorr = ['1', 'うえ', 'きつねのこども']; //三問ずつ
@@ -211,5 +210,6 @@ function nextquestion(Q) {
 //   correctans = kiCorr[kQuizNum];
 //   console.log(kQuizNum);
 // }
+
 
 
