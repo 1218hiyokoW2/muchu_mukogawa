@@ -78,7 +78,7 @@ const Qimg = [
 ]; //問題画像
 const Corr = [
   'さいころ',
-  'すいか',
+  'チーター',
   '心音',
 
   '東京',
@@ -210,6 +210,7 @@ function nextquestion(Q) {
 //   correctans = kiCorr[kQuizNum];
 //   console.log(kQuizNum);
 // }
+
 
 
 
