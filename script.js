@@ -77,7 +77,7 @@ const Qimg = [
   '上級3.png'
 ]; //問題画像
 const Corr = [
-  'さる',
+  'さいころ',
   'すいか',
   '心音',
 
@@ -210,6 +210,7 @@ function nextquestion(Q) {
 //   correctans = kiCorr[kQuizNum];
 //   console.log(kQuizNum);
 // }
+
 
 
 
