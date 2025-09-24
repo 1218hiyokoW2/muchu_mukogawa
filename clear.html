@@ -1,49 +1,61 @@
-<html lang="ja"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>むずかしいでクリア</title>
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=390, initial-scale=1.0" />
+    <title>GAME CLEAR!</title>
     <style>
       * {
         margin: 0;
-        /*width: 390px;*/
-         
-        max-width: 100%;
-        /* background-color: rgb(0, 0, 0); 
-        color: white; */
+        text-align: center;
       }
-       body {
-       /* background-image: url(ゲーム成功大人.png);
-         background-position: center center;
-         background-repeat: no-repeat; */
-       background-size: cover;
+      body {
+        min-width: 390px;
+        height: 100vh;
+        background-image: url('back.png'); /* 黒と灰色のひし形 */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 60px;
+        color: white;
+        font-family: 'Arial', sans-serif;
       }
-      a {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        height: 50px;
-        top: 50px;
-       
+      #gameclear img {
+        width: 320px;
+        margin-bottom: 40px;
+      }
+      #message {
+        font-size: 18px;
+        line-height: 1.8;
+        margin-bottom: 50px;
+      }
+      #insta img {
+        width: 240px;
+        cursor: pointer;
       }
     </style>
-    <!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-06RRD8B20F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-06RRD8B20F');
-</script>
   </head>
   <body>
-    <a href="https://www.instagram.com/muchu_mukogawa?igsh=cWNxNHUwMHppazF4">
-      MUCHU Instagram &gt;&gt;
-    </a>
-    
-    <img src="clear.png" alt="10/12 Game Clear!">
-    
-    <!-- <p>gameclear!</p> -->
-  
+    <!-- GAME CLEARの画像 -->
+    <div id="gameclear">
+      <img src="gameclear.png" alt="GAME CLEAR" />
+    </div>
 
-</body></html>
+    <!-- テキストメッセージ -->
+    <div id="message">
+      この画面を係の人に見せてね！<br /><br />
+      回答は後日 Instagram で公開！
+    </div>
+
+    <!-- Instagram ボタン -->
+    <div id="insta">
+      <a href="https://www.instagram.com/muchu_mukogawa/" target="_blank">
+        <img src="Instagram.png" alt="Instagram ボタン" />
+      </a>
+    </div>
+  </body>
+</html>
